@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
-    public int moveSpeed = 8;
+    public int moveSpeed = 3;
     private Rigidbody2D rbody;
 
     // Use this for initialization
@@ -15,6 +15,6 @@ public class movement : MonoBehaviour
 
     public void Update()
     {      
-            rbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rbody.velocity.y);         
+            rbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rbody.velocity.y);
     }
 }
